@@ -1,4 +1,4 @@
-export default function SelectPart({ setHead, top, setTop }) {
+export default function SelectPart({ setHead, setTop, setPants }) {
   return (
     <div className="select-dropdown">
       <select
@@ -21,8 +21,19 @@ export default function SelectPart({ setHead, top, setTop }) {
       >
         <option value="shredded">Shredded</option>
         <option value="blue">Blue Shirt</option>
-        {/* <option value="vinDiesel">Vin Diesel</option>
-        <option value="johnCena">John Cena</option> */}
+        <option value="suit">Tuxedo</option>
+        <option value="flannel">Flannel Button-up</option> */
+      </select>
+      <select
+        className="select-pants"
+        onChange={(e) => {
+          setPants(e.target.value);
+        }}
+      >
+        <option value="jeans">Jeans</option>
+        <option value="blue">Blue Shirt</option>
+        <option value="suit">Tuxedo</option>
+        <option value="flannel">Flannel Button-up</option> */
       </select>
     </div>
   );
