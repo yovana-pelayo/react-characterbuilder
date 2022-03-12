@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import SelectPart from '../components/Selector/Selector';
-import Body from '../components/Body/Body';
+import SelectPart from '../../components/Selector/Selector';
+import Body from '../../components/Body/Body';
+import background from '../../background.jpeg';
 
 export default function Home() {
   const [head, setHead] = useState('rock');
@@ -9,7 +10,7 @@ export default function Home() {
 
   // const [top, setTop] = useState('');
   return (
-    <div>
+    <div className="App" style={{ backgroundImage: `url(${background})` }}>
       <SelectPart
         head={head}
         setHead={setHead}

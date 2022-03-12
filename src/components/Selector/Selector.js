@@ -14,7 +14,6 @@ export default function SelectPart({ setHead, setTop, setPants }) {
       </select>
       <select
         className="select-top"
-        value={top}
         onChange={(e) => {
           setTop(e.target.value);
         }}
@@ -22,7 +21,7 @@ export default function SelectPart({ setHead, setTop, setPants }) {
         <option value="shredded">Shredded</option>
         <option value="blue">Blue Shirt</option>
         <option value="suit">Tuxedo</option>
-        <option value="flannel">Flannel Button-up</option> */
+        <option value="flannel">Flannel Button-up</option>
       </select>
       <select
         className="select-pants"
@@ -31,9 +30,8 @@ export default function SelectPart({ setHead, setTop, setPants }) {
         }}
       >
         <option value="jeans">Jeans</option>
-        <option value="blue">Blue Shirt</option>
-        <option value="suit">Tuxedo</option>
-        <option value="flannel">Flannel Button-up</option> */
+        <option value="slacks">Slacks</option>
+        <option value="shorts">Shorts</option>
       </select>
     </div>
   );
