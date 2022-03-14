@@ -1,0 +1,5 @@
+.select-dropdown {
+  display: grid;
+  flex-direction: column;
+  width: 50%;
+}
