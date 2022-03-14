@@ -1,4 +1,5 @@
 import React from 'react';
+import './Catchphrases';
 
 export default function Catchphrases({ setPickupLine, pickupLine, setPickupLines, pickupLines }) {
   const savePickupLine = () => {
@@ -8,7 +9,9 @@ export default function Catchphrases({ setPickupLine, pickupLine, setPickupLines
   return (
     <div>
       <input value={pickupLine} type="text" onChange={(e) => setPickupLine(e.target.value)} />
-      <button onClick={savePickupLine}>Save Pickup Line</button>
+      <button className="button" onClick={savePickupLine}>
+        Save Pickup Line
+      </button>
       <ul>
         {pickupLines.map((item) => (
           <li key={item}>{item}</li>
