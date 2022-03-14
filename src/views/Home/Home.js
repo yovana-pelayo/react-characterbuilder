@@ -8,8 +8,8 @@ export default function Home() {
   const [head, setHead] = useState('rock');
   const [top, setTop] = useState('shredded');
   const [pants, setPants] = useState('jeans');
-  const [pickUpLine, setPickUpLine] = useState('');
-  const [pickUpLines, setPickUpLines] = useState('');
+  const [pickupLine, setPickupLine] = useState('');
+  const [pickupLines, setPickupLines] = useState('');
   return (
     <div className="App" style={{ backgroundImage: `url(${background})` }}>
       <SelectPart
@@ -22,12 +22,13 @@ export default function Home() {
       />
       <Body head={head} top={top} pants={pants} />
       <Catchphrases
-        pickUpLine={pickUpLine}
-        setPickUpLine={setPickUpLine}
-        pickUpLines={pickUpLines}
-        setPickUpLines={setPickUpLines}
+        pickupLine={pickupLine}
+        setPickupLine={setPickupLine}
+        pickupLines={pickupLines}
+        setPickupLines={setPickupLines}
       />
     </div>
   );
 }
 // move to a head component
+// we are defining vars or objects within the component. Is that correct or what is a better way of phrasing it?
