@@ -1,5 +1,5 @@
 import React from 'react';
-import './Catchphrases';
+import './Catchphrases.css';
 
 export default function Catchphrases({ setPickupLine, pickupLine, setPickupLines, pickupLines }) {
   const savePickupLine = () => {

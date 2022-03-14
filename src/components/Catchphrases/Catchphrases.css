@@ -1,0 +1,12 @@
+li {
+  color: red;
+}
+button {
+  background-color: red;
+  border-radius: 10px;
+  color: black;
+  border-color: rgb(172, 50, 50);
+}
+ul {
+  list-style: none;
+}
