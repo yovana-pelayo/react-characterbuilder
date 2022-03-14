@@ -22,3 +22,4 @@ export default function Catchphrases({ setPickupLine, pickupLine, setPickupLines
     //created button that saves text in box
   );
 }
+// code breaks after refreshing. I think it is because pickuplines is set to and empty string

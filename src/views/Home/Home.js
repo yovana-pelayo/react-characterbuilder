@@ -9,7 +9,7 @@ export default function Home() {
   const [top, setTop] = useState('shredded');
   const [pants, setPants] = useState('jeans');
   const [pickupLine, setPickupLine] = useState('');
-  const [pickupLines, setPickupLines] = useState('');
+  const [pickupLines, setPickupLines] = useState([]);
   return (
     <div className="App" style={{ backgroundImage: `url(${background})` }}>
       <SelectPart
